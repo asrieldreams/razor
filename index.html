@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Razor Build Paths | Genshin Impact</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .path-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .path-card {
+      background: var(--card-bg);
+      border: 2px solid var(--accent-physical);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: var(--soft-shadow);
+      transition: transform 0.2s ease;
+    }
+
+    .path-link:hover .path-card {
+      transform: translateY(-3px);
+      border-color: var(--accent-electro);
+    }
+
+    .path-card h2 {
+      color: var(--accent-physical);
+    }
+
+    .path-card.electro {
+      border-color: var(--accent-electro);
+    }
+
+    .path-card.electro h2 {
+      color: var(--accent-electro);
+    }
+
+    .path-card ul {
+      padding-left: 1.2rem;
+    }
+
+    .overview-box {
+      text-align: center;
+      background: #202026;
+      padding: 1.2rem;
+      margin-top: 1rem;
+      border-radius: 6px;
+      color: #bbb;
+      font-size: 0.95rem;
+      font-style: italic;
+      border-left: 4px solid var(--accent-electro);
+      border-right: 4px solid var(--accent-physical);
+    }
+
+    @media (max-width: 768px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🐺 Razor Build Selector</h1>
+    <p>Choose your path—claw with instinct, or strike with lightning.</p>
+  </header>
+
+  <div class="overview-box">
+    <p>Need a quick summary of Razor’s character, lore, constellations and passives? <a href="razor-overview.html">Read the Overview →</a></p>
+  </div>
+
+  <main class="layout-grid">
+    <a href="physical.html" class="path-link">
+      <div class="path-card physical">
+        <h2>⚔️ Physical Razor</h2>
+        <p>A relentless on-field DPS who stacks buffs and unleashes clawed fury. Relies on Superconduct for Physical RES shred.</p>
+        <ul>
+          <li>🗡️ Weapons</li>
+          <li>🧿 Artifacts & Stats</li>
+          <li>📊 Talents</li>
+          <li>🧊 Teams</li>
+        </ul>
+      </div>
+    </a>
+
+    <a href="electro.html" class="path-link">
+      <div class="path-card electro">
+        <h2>⚡ Electro Razor</h2>
+        <p>Leverages via Electro coordinated attacks, reactions, and Elemental Mastery scaling during his Burst.</p>
+        <ul>
+          <li>⚔️ Weapons</li>
+          <li>🧿 Artifacts & Stats</li>
+          <li>📊 Talents</li>
+          <li>🔋 Teams</li>
+        </ul>
+      </div>
+    </a>
+  </main>
+
+  <footer>
+    <p>Crafted by Stellar • Version 5.7 • Choose your path wisely 🐺</p>
+  </footer>
+</body>
+</html>
